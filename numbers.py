@@ -8,8 +8,8 @@ float(10)  # 10.0
 1000 = 1_000
 
 5 / 10 = 0.5  # float answer
-5 // 10 = 0  # int answer (cuts off the decimal place)
+5 // 10 = 0  # int answer (cuts off the decimal place), floored devision
 
 5**10 = 9765625  # 5 to the power of 10, same as Math.pow(5, 10)
 
-i += 1  # only way to increment, can't use i++
+i += 1  # to increment, can't use i++
