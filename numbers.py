@@ -11,3 +11,5 @@ float(10)  # 10.0
 5 // 10 = 0  # int answer (cuts off the decimal place)
 
 5**10 = 9765625  # 5 to the power of 10, same as Math.pow(5, 10)
+
+i += 1  # only way to increment, can't use i++
