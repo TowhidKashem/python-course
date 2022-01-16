@@ -1,3 +1,6 @@
+# convert to string, similar to JSON.stringify(obj), works on any other data type as well
+str({'a': 1, 'b': 2})  # "{'a': 1, 'b': 2}"
+
 # concatenate strings, same as js
 name = 'John' + ' ' + 'Doe'
 

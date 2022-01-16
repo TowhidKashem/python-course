@@ -27,6 +27,11 @@ for fruit_index in range(len(fruits)):
     print(manual_index_counter)
     manual_index_counter += 1
 
+# or use enumerate() for easy access to the index
+for (index, value) in enumerate(fruits):
+    print(index)  # 0, 1, 2
+    print(value)  # apple, banana, cherry
+
 
 # jump iterations by more than 1, the optional 3rd agument in range() is the "step"
 for fruit_index in range(len(fruits), 2):
