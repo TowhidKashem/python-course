@@ -41,3 +41,9 @@ def my_function(*kids):
 # same as above but for an unknown number of keyword arguments
 def my_function(**kid):
     print("His last name is " + kid["lname"])
+
+
+# to avoid errors when writing a function as a temp placeholder
+# using "pass" is equivilent to just "return" nothing
+def do_something():
+    pass

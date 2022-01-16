@@ -1,3 +1,5 @@
+# dictionaries don't guarantee insertion order, keys are unique
+
 car = {
     "brand": "Ford",
     "model": "Mustang",

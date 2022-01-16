@@ -9,9 +9,18 @@ c is a  # True
 a is not b  # True
 
 
-is_dog and is_pet  # same as &&
+[1, 2, 3] == [1, 2, 3]  # True, can compare the VALUES of 2 lists like this unlike js
+[1, 2, 3] is [1, 2, 3]  # False, they're still different objects in memory
 
-is_dog or is_cat  # same as ||
+
+if is_dog and is_pet  # same as &&
+
+if is_dog or is_cat  # same as ||
+
+
+# can group conditions with parentheses
+if (is_dog and is_pet) or (is_cat and is_pet)
+
 
 # use 'not' to reverse the value
 num = 10

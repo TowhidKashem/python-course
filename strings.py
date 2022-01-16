@@ -31,3 +31,7 @@ greeting.replace("H", "J")  # Jello World, replace ALL "H" with "J"
 age = 36
 txt = "My name is John, and I am {}"
 txt.format(age)
+
+
+# check if a string contains a character/s
+'a' in 'abc'  # True

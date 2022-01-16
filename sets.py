@@ -1,3 +1,5 @@
+# sets don't guarantee insertion order and contain only unique values
+
 fruits = {"apple", "banana", "cherry"}
 
 "apple" in fruits  # True
