@@ -1,6 +1,3 @@
-# iterables can be looped and share many avialable properties and functions
-# in python lists, dictionaries, sets and tuples are all iterables
-
 # for loop
 fruits = ["apple", "banana", "cherry"]
 for fruit in fruits:

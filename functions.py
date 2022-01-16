@@ -43,7 +43,6 @@ def my_function(**kid):
     print("His last name is " + kid["lname"])
 
 
-# to avoid errors when writing a function as a temp placeholder
-# using "pass" is equivilent to just "return" nothing
+# to avoid errors when writing a function as a temp placeholder, using "pass" is equivilent to just "return"ing nothing
 def do_something():
     pass
