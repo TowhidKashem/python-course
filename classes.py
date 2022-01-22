@@ -11,7 +11,7 @@ p1 = MyClass()
 print(p1.x)
 
 
-# define 'init' method, equivalent to a 'constructor', the first argument of 'self' is required
+# define 'init' method, same as a 'constructor', the first argument of 'self' is required
 class Person:
     def __init__(self, name, age):
         self.name = name

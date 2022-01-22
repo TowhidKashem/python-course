@@ -33,14 +33,22 @@ sayNameAndAge(age=33, name="Joe")
 
 
 # if you don't know the number of arguments that will be passed, use *args, same as `arguments` keyword in js
-# this can then be used as a list
+# this will allow all arguments to be accessible as a list
+# kids = ['Emil', 'Tobias']
 def my_function(*kids):
     print("The youngest child is " + kids[2])
 
 
+my_function("Emil", "Tobias")
+
+
 # same as above but for an unknown number of keyword arguments
+# kid = { first_name: "Towhid", last_name: "Kashem" }
 def my_function(**kid):
-    print("His last name is " + kid["lname"])
+    print("His last name is " + kid["last_name"])
+
+
+my_function(first_name="Towhid", last_name="Kashem")
 
 
 # to avoid errors when writing a function as a temp placeholder, using "pass" is equivilent to just "return"ing nothing
@@ -49,4 +57,5 @@ def do_something():
 
 
 # lambda functions are one liners, they can take any number of args but can only have 1 expression
+# same as "const addTen = (x) => x + 10"
 def addTen(x): return x + 10

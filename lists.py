@@ -36,6 +36,26 @@ doubled_nums = [num * 2 for num in nums]  # [2, 4, 6]
 doubled_nums = [num * 2 for num in nums if num == 2]  # [4]
 
 
+# but map() exists too
+# must wrap the result in list() because it doesn't return a list by default
+def multiply_by_two(num):
+    return num * 2
+
+
+list(map(multiply_by_two, nums))  # [2, 4, 6]
+
+# [2, 4, 6], same as above but 1 liner with lambda
+list(map(lambda n: n * 2, nums))
+
+# ['1', '2', '3'], supplying the built-in str() function here:
+list(map(str, nums))
+
+
+# reduce(), available in functools package
+# import functiontools
+functools.reduce(lambda a, b: a + b, nums)  # 6
+
+
 # make a shallow copy of the list (works on tuples as well)
 # since it's shallow if the list had something like an object it will be a reference to it
 copy = myList[:]

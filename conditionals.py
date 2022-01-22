@@ -21,3 +21,7 @@ else:
 
 # shorthand if else
 print("Yes") if 5 > 2 else print("No")
+
+
+# ternary expression
+name = 'Towhid' if age == 33 else 'Julia'

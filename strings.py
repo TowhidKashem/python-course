@@ -25,7 +25,11 @@ greeting = "Hello World"
 greeting.replace("H", "J")  # Jello World, replace ALL "H" with "J"
 
 
-# placeholder variables
+# placeholder variables, similar to using template literals
+# My name is John and I am 36
+txt = "My name is {name} and I am {age}".format(name='John', age=33)
+
+# if you put a "f" in front of the string, it will look in the surrounding space for variables it can plugin so you can ommit the format() part
+name = 'John'
 age = 36
-txt = "My name is John, and I am {}"
-txt.format(age)
+txt = f"My name is {name} and I am {age}"  # My name is John and I am 36
