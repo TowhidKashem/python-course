@@ -5,7 +5,7 @@ str({'a': 1, 'b': 2})  # "{'a': 1, 'b': 2}"
 name = 'John' + ' ' + 'Doe'
 
 # repeat a string x times, same as 'hello'.repeat(10)
-sayHelloTenTimes = 'Hello' * 10
+say_hello_ten_times = 'Hello' * 10
 
 # span mutiple lines with triple quotes, same as using backticks
 # `greeting` will have \n for the line breaks in it

@@ -25,11 +25,11 @@ greet("Joe")  # Hello Joe!
 
 
 # keyword arguments lets you switch up the order of the arguments, works like using an object as the param
-def sayNameAndAge(name, age):
+def say_name_and_age(name, age):
     print("Hello " + name + ", you are " + age + " years old!")
 
 
-sayNameAndAge(age=33, name="Joe")
+say_name_and_age(age=33, name="Joe")
 
 
 # if you don't know the number of arguments that will be passed, use *args, same as `arguments` keyword in js
@@ -57,5 +57,5 @@ def do_something():
 
 
 # lambda functions are one liners, they can take any number of args but can only have 1 expression
-# same as "const addTen = (x) => x + 10"
-def addTen(x): return x + 10
+# same as "const add_ten = (x) => x + 10"
+def add_ten(x): return x + 10

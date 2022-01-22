@@ -1,30 +1,30 @@
 # lists = arrays
 
-myList = [1, 2, 3, False, [4, 5, 6], 'hello']
+my_list = [1, 2, 3, False, [4, 5, 6], 'hello']
 
-myList[0]  # 1
+my_list[0]  # 1
 
-myList[-1]  # 'hello', same as myList[myList.length - 1]
+my_list[-1]  # 'hello', same as my_list[my_list.length - 1]
 
-myList[0:2]  # [1, 2], same as myList.slice(0, 2)
+my_list[0:2]  # [1, 2], same as my_list.slice(0, 2)
 
-myList[0] + 1  # 2, but original list value is not mutated
+my_list[0] + 1  # 2, but original list value is not mutated
 
-myList.append('world')  # same as push()
+my_list.append('world')  # same as push()
 
 # add to the end of a list, same as using spread operator
 my_list = [1, 2, 3]
 my_list.extend([4, 5, 6])  # [1, 2, 3, 4, 5, 6]
 
 
-myList.pop()  # 'world', myList is mutated
+my_list.pop()  # 'world', my_list is mutated
 
 # insert "wow" at the first index
-myList.insert(1, 'wow')
+my_list.insert(1, 'wow')
 
-myList.remove('inserted')  # same as filter()'ing by value
+my_list.remove('inserted')  # same as filter()'ing by value
 
-del myList[0]  # delete by index
+del my_list[0]  # delete by index
 
 
 # list comprehensions, same as <array>.map(num => num * 2)
@@ -58,13 +58,13 @@ functools.reduce(lambda a, b: a + b, nums)  # 6
 
 # make a shallow copy of the list (works on tuples as well)
 # since it's shallow if the list had something like an object it will be a reference to it
-copy = myList[:]
+copy = my_list[:]
 
 
-myList = [True, False, True]
-any(myList)  # True
-all(myList)  # False
+my_list = [True, False, True]
+any(my_list)  # True
+all(my_list)  # False
 
 # are all numbers greater than 0
-myList = [1, 2, 3, -5]
-all([el > 0 for el in myList])  # False
+my_list = [1, 2, 3, -5]
+all([el > 0 for el in my_list])  # False

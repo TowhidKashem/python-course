@@ -26,3 +26,13 @@ print(dict_stats)  # {'age': 22, 'height': 5.9, 'weight': 170}
 
 
 del car['brand']  # delete by key
+
+
+# for ordered dictionaries, use OrderedDict from the `collections` package
+# it takes a list of tuples and returns an ordered dictionary
+collections.OrderedDict([('name', 'TK'), ('age', 33)])
+
+
+# import json
+json.dumps(dict)  # same as `JSON.stringify(dict)`
+json.loads(str)  # same as `JSON.parse(str)`
