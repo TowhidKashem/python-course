@@ -1,4 +1,4 @@
-# convert to string, similar to JSON.stringify(obj), works on any other data type as well
+# convert any data type to a string, similar to toString() and JSON.stringify(obj)
 str({'a': 1, 'b': 2})  # "{'a': 1, 'b': 2}"
 
 # concatenate strings, same as js

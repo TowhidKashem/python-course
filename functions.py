@@ -46,3 +46,7 @@ def my_function(**kid):
 # to avoid errors when writing a function as a temp placeholder, using "pass" is equivilent to just "return"ing nothing
 def do_something():
     pass
+
+
+# lambda functions are one liners, they can take any number of args but can only have 1 expression
+def addTen(x): return x + 10

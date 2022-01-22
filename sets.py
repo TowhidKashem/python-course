@@ -14,3 +14,9 @@ fruits.remove('banana')
 
 # remove an element from the set, if elem doesn't exist fails silently
 fruits.discard('banana')
+
+# create sets from other iterables (strings, lists, dictionaries, tuples)
+set('abc')
+set([1, 2, 3])
+set({'a': '1', 'b': '2'})
+set((1, 2))
