@@ -10,12 +10,16 @@ my_list[0:2]  # [1, 2], same as my_list.slice(0, 2)
 
 my_list[0] + 1  # 2, but original list value is not mutated
 
+# copy array
+my_list_copy = my_list.copy()
+# or
+my_list_copy = my_list[:]
+
 my_list.append('world')  # same as push()
 
 # add to the end of a list, same as using spread operator
 my_list = [1, 2, 3]
 my_list.extend([4, 5, 6])  # [1, 2, 3, 4, 5, 6]
-
 
 my_list.pop()  # 'world', my_list is mutated
 
