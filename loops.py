@@ -12,6 +12,10 @@ for fruit in fruits:
 for x in range(6):
     print(x)
 
+# loop from 6 to 12, same as for (let i = 6; i < 12; i++)
+for x in range(6, 12):
+    print(x)
+
 
 # for else
 for fruit in fruits:

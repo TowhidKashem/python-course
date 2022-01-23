@@ -3,6 +3,8 @@
 
 fruits = {"apple", "banana", "cherry"}
 
+'apple' in fruits  # check if item is in set
+
 fruits.add('orange')  # add an element to the set
 
 # add items from a list to the set
