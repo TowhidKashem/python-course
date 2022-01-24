@@ -1,6 +1,6 @@
 # define class
 class MyClass:
-    # this is a class wide attribute
+    # this is a class attribute
     name = 'John'
 
     # all methods in a class needs the `self` argument passed in, it's the same as `this`
@@ -21,6 +21,8 @@ print(p1.name)  # John
 # on an instance by instance basis
 class Person:
     def __init__(self, name, age):
+        # these are class properties (different from "attributes")
+        # properties can have getters and setters but attributes are always accessible
         self.name = name
         self.age = age
         # private properties are defined with a `__` in front of the name
@@ -49,10 +51,21 @@ class Student(Person):
         # all extended classes need to call super() otherwise it's constructor is overriding the parent's
         super().__init__(name, age)
         self.grade = grade
+        self.__private_grade = 100
 
     # this built in method can be used to display custom output when the class is printed, useful for debugging
     def __repr__(self):
         return 'custom output here...'
+
+    # getter method, the name must match the name of the property being accessed
+    @property
+    def private_grade(self):
+        return self.__private_grade
+
+    # setter method, the name must match the name of the property being updated
+    @private_grade.setter
+    def private_grade(self, new_grade):
+        self.__private_grade = new_grade
 
     # methods that don't need access to any other class attritbute can be labeled with the @staticmethod decorator
     # these methods will error if self is passed in as an argument since they only use any arguments passed into them from the place where they're called (if any)
@@ -80,3 +93,10 @@ print(student.print_hobby())  # swimming
 # static and class methods can also be called directly WITHOUT instantiating the class first
 print(Student.say_hello('Sam'))  # Hello Sam
 print(Student.print_hobby())  # swimming
+
+# use getter function to get value of private property
+print(student.private_grade)  # 100
+
+# use setter to update the value of private property
+student.private_grade = 50
+print(student.private_grade)  # 50
