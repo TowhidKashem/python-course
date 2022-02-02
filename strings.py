@@ -24,6 +24,11 @@ greeting.lower()  # same as toLowerCase()
 greeting = "Hello World"
 greeting.replace("H", "J")  # Jello World, replace ALL "H" with "J"
 
+# reverse a string, same as reverse()
+greeting[::-1]  # "dlroW olleH"
+
+# sort
+''.join(sorted('bac'))  # 'abc'
 
 # placeholder variables, similar to using template literals
 # My name is John and I am 36

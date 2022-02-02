@@ -72,3 +72,11 @@ all(my_list)  # False
 # are all numbers greater than 0
 my_list = [1, 2, 3, -5]
 all([el > 0 for el in my_list])  # False
+
+
+# same as Math.min() and Math.max()
+min(my_list)  # -5
+max(my_list)  # 3
+
+# sort
+sorted(['b', 'a', 'c'])  # ['a', 'b', 'c']

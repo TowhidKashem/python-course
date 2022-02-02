@@ -4,6 +4,9 @@ float('10.2')  # 10.2, same as parseFloat('10.2')
 int(10.0)  # 10
 float(10)  # 10.0
 
+abs(-10)  # 10
+-abs(10)  # -10
+
 # numbers can be written with underscores to be more readable
 1000 = 1_000
 
