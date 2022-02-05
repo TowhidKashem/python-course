@@ -22,6 +22,7 @@ my_list = [1, 2, 3]
 my_list.extend([4, 5, 6])  # [1, 2, 3, 4, 5, 6]
 
 my_list.pop()  # 'world', my_list is mutated
+my_list.pop(1)  # 2, remove element at specified index
 
 # insert "wow" at the first index
 my_list.insert(1, 'wow')

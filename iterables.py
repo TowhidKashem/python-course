@@ -61,3 +61,6 @@ if "cucumber" not in foods:
 # join all values seperated by a delimeter into a string (list, dictionary, tuple, set)
 # joins all characters into a string (string)
 print('-'.join(foods))  # apple-broccoli-chicken
+
+# split a string based on provided delimeter
+foods.split('-')  # ['apple', 'broccoli', 'chicken']

@@ -42,6 +42,17 @@ for fruit_index in range(len(fruits), 2):
     print(fruits[fruit_index])  # jumps to every 2nd element
 
 
+# get key and value in dict
+car = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+
+for key, value in car.items():
+    print(key, value)  # (brand, Ford), (model, Mustang), (year 1964)
+
+
 # while
 i = 1
 while i < 6:
