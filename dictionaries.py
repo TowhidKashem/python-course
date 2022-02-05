@@ -36,3 +36,11 @@ collections.OrderedDict([('name', 'TK'), ('age', 33)])
 # import json
 json.dumps(dict)  # same as `JSON.stringify(dict)`
 json.loads(str)  # same as `JSON.parse(str)`
+
+
+# convert a class into a dictionary
+print(self.__dict__)  # from the inside
+
+# or from the outside
+my_class = MyClass()
+print(my_class.__dict__)
