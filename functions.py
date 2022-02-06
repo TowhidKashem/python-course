@@ -23,6 +23,9 @@ def greet(name="Stranger"):
 greet()  # Hello Stranger!
 greet("Joe")  # Hello Joe!
 
+# default arguments can also be passed at the time of invoking the function for better readability, it must match the variable name used in the function definition
+greet(name="Joe")  # Hello Joe!
+
 
 # keyword arguments lets you switch up the order of the arguments, works like using an object as the param
 def say_name_and_age(name, age):

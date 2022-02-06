@@ -44,7 +44,8 @@ print(foods)
 
 
 # destructing aka unpacking values (list, tuple)
-# also works on sets and dictionaries but no real use case there
+# also works on sets and dictionaries but no real use case there since it only extracts the key names not the values
+# for destructing those use `itemgetter()` from the standard library
 fruit, veggie, meat = foods
 print(meat)
 

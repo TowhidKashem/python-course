@@ -14,6 +14,7 @@ import foo as bar
 # not recomended, but you can import all functions from a module like this, same as `import * from 'people'`
 from people import *
 
+
 ######
 
 # putting a file named `__init__.py` inside any folder turns it into a package
@@ -109,6 +110,8 @@ if __name__ == '__main__':
 > pipenv shell
 
 > deactivate # exit the virtual environment shell
+
+# to re-activate the vm after deactivating it, the easiest way is to just open a new terminal window and type `pipenv shell` again
 
 > pipenv install <package> # install a package, seperate package names with spaces to install multiple
 
