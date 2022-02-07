@@ -73,7 +73,7 @@ car_copy = car.copy()
 car_copy['brand'] = 'Toyota'
 
 # make a deep copy
-car_deep_copy = deepcopy(car)  # from copy import deepcopy
+car_deep_copy = deepcopy(car)  # `from copy import deepcopy`
 car_deep_copy['owner']['name'] = 'Sam'
 car_deep_copy['owner']['hobbies'][0]['name'] = 'Baseball'
 

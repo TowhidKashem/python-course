@@ -24,6 +24,7 @@ greet()  # Hello Stranger!
 greet("Joe")  # Hello Joe!
 
 # default arguments can also be passed at the time of invoking the function for better readability, it must match the variable name used in the function definition
+# doing it this way also means arguments can be in any order
 greet(name="Joe")  # Hello Joe!
 
 

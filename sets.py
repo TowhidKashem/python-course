@@ -22,3 +22,6 @@ set('abc')
 set([1, 2, 3])
 set({'a': '1', 'b': '2'})
 set((1, 2))
+
+# initialize a new empty set
+myset = set()  # `myset = {}` won't work because it would initialize a dictionary
