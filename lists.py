@@ -55,6 +55,8 @@ list(map(lambda n: n * 2, nums))
 # ['1', '2', '3'], supplying the built-in str() function here:
 list(map(str, nums))
 
+list(my_set)  # convert a set to a list
+
 
 # reduce(), available in functools package
 # import functiontools
