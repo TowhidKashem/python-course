@@ -81,5 +81,16 @@ all([el > 0 for el in my_list])  # False
 min(my_list)  # -5
 max(my_list)  # 3
 
-# sort
-sorted(['b', 'a', 'c'])  # ['a', 'b', 'c']
+
+# sort (letters or numbers)
+['b', 'a', 'c'].sort()  # ['a', 'b', 'c'], mutates
+sorted_letters = sorted(['b', 'a', 'c'])  # ['a', 'b', 'c'], does not mutate
+
+
+# sort a list dictionaries by one of the attributes
+users = [
+    {'name': 'tk', 'age': 18},
+    {'name': 'joe', 'age': 22}
+]
+users.sort(key=lambda x: x.age, reverse=True)  # sorts in place
+sorted_users = sorted(users, key=lambda x: x.age, reverse=True)  # new list

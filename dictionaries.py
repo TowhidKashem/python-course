@@ -1,4 +1,4 @@
-# dictionaries don't guarantee insertion order, keys are unique
+# starting python 3.7+ dictionaries preserve insertion order
 
 # keys must be wrapped in quotes, unlike js it's not optional
 car = {
@@ -33,11 +33,6 @@ print(dict_stats)  # {'age': 22, 'height': 5.9, 'weight': 170}
 
 
 del car['brand']  # delete by key
-
-
-# for ordered dictionaries, use OrderedDict from the `collections` package
-# it takes a list of tuples and returns an ordered dictionary
-collections.OrderedDict([('name', 'TK'), ('age', 33)])
 
 
 # import json
@@ -80,3 +75,8 @@ car_deep_copy['owner']['hobbies'][0]['name'] = 'Baseball'
 print(car)
 print(car_copy)
 print(car_deep_copy)
+
+
+# sort a dictionary by it's numeric values
+sorted(my_dict.items(), key=lambda x: x[1])  # ascending
+sorted(my_dict.items(), key=lambda x: x[1], reverse=True)  # descending
