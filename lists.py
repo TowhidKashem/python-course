@@ -92,5 +92,5 @@ users = [
     {'name': 'tk', 'age': 18},
     {'name': 'joe', 'age': 22}
 ]
-users.sort(key=lambda x: x.age, reverse=True)  # sorts in place
-sorted_users = sorted(users, key=lambda x: x.age, reverse=True)  # new list
+users.sort(key=lambda x: x['age'], reverse=True)  # sorts in place
+sorted_users = sorted(users, key=lambda x: x['age'], reverse=True)  # new list

@@ -25,3 +25,7 @@ set((1, 2))
 
 # initialize a new empty set
 myset = set()  # `myset = {}` won't work because it would initialize a dictionary
+
+# to mimic an ordered set (preserve insertion order) a dict can be used like so:
+keywords = ['foo', 'bar', 'bar', 'foo', 'baz', 'foo']
+list(dict.fromkeys(keywords))  # ['foo', 'bar', 'baz']
